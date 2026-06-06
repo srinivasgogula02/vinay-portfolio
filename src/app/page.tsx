@@ -5,6 +5,7 @@ import TestimonialGrid from '@/components/TestimonialGrid';
 import { LogoCloud } from '@/components/ui/logo-cloud-2';
 import ClientsMarquee from '@/components/ClientsMarquee';
 import { Edit3, ArrowRight } from 'lucide-react';
+import AnimatedCounter from '@/components/AnimatedCounter';
 
 export const dynamic = 'force-dynamic';
 
@@ -33,18 +34,25 @@ export default async function Home() {
       {/* Film Grain Texture */}
       <div className="fixed inset-0 pointer-events-none z-50 opacity-[0.04] bg-[url('data:image/svg+xml,%3Csvg%20viewBox=%220%200%20200%20200%22%20xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter%20id=%22noiseFilter%22%3E%3CfeTurbulence%20type=%22fractalNoise%22%20baseFrequency=%220.75%22%20numOctaves=%223%22%20stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect%20width=%22100%25%22%20height=%22100%25%22%20filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E')] mix-blend-overlay"></div>
 
-      <main className="relative z-10 pt-16 pb-16 px-4 sm:px-6 max-w-6xl mx-auto space-y-24 md:space-y-32">
+      <main className="relative z-10 pt-16 pb-16 px-4 sm:px-6 max-w-6xl mx-auto space-y-20 md:space-y-24">
         
-        <section className="min-h-[75vh] flex flex-col justify-center animate-in fade-in slide-in-from-bottom-8 duration-1000">
+        <section className="py-10 md:py-16 lg:py-20 flex flex-col justify-center animate-in fade-in slide-in-from-bottom-8 duration-1000">
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
               
               <div className="lg:w-1/2 space-y-8 w-full">
-                  <div className="space-y-1">
-                    <p className="text-[10px] sm:text-xs uppercase tracking-[0.3em] text-neutral-500 pl-1 font-semibold">Video Editor & Creator</p>
-                    <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.85] text-neutral-900">
-                        VINAY <br />
-                        <span className="font-serif italic font-normal text-neutral-500">Gogula</span>
-                    </h1>
+                  <div className="flex flex-row justify-between items-end sm:items-start sm:flex-col gap-4">
+                    <div className="space-y-1">
+                      <p className="text-[10px] sm:text-xs uppercase tracking-[0.3em] text-neutral-500 pl-1 font-semibold">Video Editor & Creator</p>
+                      <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[0.85] text-neutral-900">
+                          VINAY <br />
+                          <span className="font-serif italic font-normal text-neutral-500">Gogula</span>
+                      </h1>
+                    </div>
+                    {/* Mobile-only stats aligned to the right of the title */}
+                    <div className="flex flex-col text-right pb-1 sm:hidden">
+                        <span className="text-3xl font-bold tracking-tighter text-neutral-900"><AnimatedCounter to={10} />M+</span>
+                        <span className="text-[8px] uppercase tracking-widest text-neutral-500 mt-1 font-medium">Organic Views</span>
+                    </div>
                   </div>
                   
                   <div className="h-px w-16 bg-neutral-300"></div>
@@ -79,9 +87,9 @@ export default async function Home() {
                     </a>
                   </div>
 
-                  <div className="flex items-center gap-4 pt-4">
+                  <div className="hidden sm:flex items-center gap-4 pt-4">
                     <div className="flex flex-col">
-                        <span className="text-4xl md:text-5xl font-bold tracking-tighter text-neutral-900">10M+</span>
+                        <span className="text-4xl md:text-5xl font-bold tracking-tighter text-neutral-900"><AnimatedCounter to={10} />M+</span>
                         <span className="text-[10px] uppercase tracking-widest text-neutral-500 mt-1 font-medium">Organic Views</span>
                     </div>
                   </div>
