@@ -34,9 +34,9 @@ export default async function Home() {
       {/* Film Grain Texture */}
       <div className="fixed inset-0 pointer-events-none z-50 opacity-[0.04] bg-[url('data:image/svg+xml,%3Csvg%20viewBox=%220%200%20200%20200%22%20xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter%20id=%22noiseFilter%22%3E%3CfeTurbulence%20type=%22fractalNoise%22%20baseFrequency=%220.75%22%20numOctaves=%223%22%20stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect%20width=%22100%25%22%20height=%22100%25%22%20filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E')] mix-blend-overlay"></div>
 
-      <main className="relative z-10 pt-16 pb-16 px-4 sm:px-6 max-w-6xl mx-auto space-y-20 md:space-y-24">
+      <main className="relative z-10 pt-4 md:pt-16 pb-16 px-4 sm:px-6 max-w-6xl mx-auto space-y-20 md:space-y-24">
         
-        <section className="py-10 md:py-16 lg:py-20 flex flex-col justify-center animate-in fade-in slide-in-from-bottom-8 duration-1000">
+        <section className="pt-2 pb-10 md:py-16 lg:py-20 flex flex-col justify-center animate-in fade-in slide-in-from-bottom-8 duration-1000">
           <div className="flex flex-col lg:flex-row gap-10 lg:gap-16 items-center">
               
               <div className="lg:w-1/2 space-y-8 w-full">
