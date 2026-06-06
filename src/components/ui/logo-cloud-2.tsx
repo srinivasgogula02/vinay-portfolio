@@ -46,7 +46,7 @@ export function LogoCloud({ className, ...props }: LogoCloudProps) {
       <LogoCard
         className="relative border-r border-b border-neutral-200 md:bg-neutral-50/50"
         logo={{
-          icon: <div className="flex items-center gap-2"><Aperture className="w-8 h-8 text-neutral-800" /><span className="font-bold text-neutral-800">DaVinci Resolve</span></div>,
+          icon: <div className="flex items-center gap-2"><img src="/davinci-resolve.png" alt="DaVinci Resolve" className="w-8 h-8 object-contain" /><span className="font-bold text-neutral-800">DaVinci Resolve</span></div>,
           alt: "DaVinci Resolve",
         }}
       >
@@ -63,7 +63,7 @@ export function LogoCloud({ className, ...props }: LogoCloudProps) {
       <LogoCard
         className="relative border-b border-neutral-200 bg-neutral-50/50 md:bg-white"
         logo={{
-          icon: <div className="flex items-center gap-2"><Palette className="w-8 h-8 text-cyan-600" /><span className="font-bold text-neutral-800">Canva</span></div>,
+          icon: <div className="flex items-center gap-2"><img src="/canva.png" alt="Canva" className="w-8 h-8 object-contain" /><span className="font-bold text-neutral-800">Canva</span></div>,
           alt: "Canva",
         }}
       />
@@ -71,8 +71,8 @@ export function LogoCloud({ className, ...props }: LogoCloudProps) {
       <LogoCard
         className="relative border-r border-b border-neutral-200 bg-neutral-50/50 md:border-b-0 md:bg-white"
         logo={{
-          icon: <div className="flex items-center gap-2"><Mic className="w-8 h-8 text-neutral-800" /><span className="font-bold text-neutral-800">ElevenLabs</span></div>,
-          alt: "ElevenLabs",
+          icon: <div className="flex items-center gap-2"><img src="/heygen.png" alt="HeyGen" className="w-8 h-8 object-contain" /><span className="font-bold text-neutral-800">HeyGen</span></div>,
+          alt: "HeyGen",
         }}
       >
         <PlusIcon
@@ -84,23 +84,23 @@ export function LogoCloud({ className, ...props }: LogoCloudProps) {
       <LogoCard
         className="border-b border-neutral-200 bg-white md:border-r md:border-b-0 md:bg-neutral-50/50"
         logo={{
-          icon: <div className="flex items-center gap-2"><Sparkles className="w-8 h-8 text-purple-500" /><span className="font-bold text-neutral-800">Midjourney</span></div>,
-          alt: "Midjourney",
+          icon: <div className="flex items-center gap-2"><img src="/higgsfield.png" alt="Higgsfield" className="w-8 h-8 object-contain" /><span className="font-bold text-neutral-800">Higgsfield</span></div>,
+          alt: "Higgsfield",
         }}
       />
 
       <LogoCard
         className="border-r border-neutral-200"
         logo={{
-          icon: <div className="flex items-center gap-2"><Wand2 className="w-8 h-8 text-neutral-800" /><span className="font-bold text-neutral-800">Runway AI</span></div>,
-          alt: "Runway AI",
+          icon: <div className="flex items-center gap-2"><img src="/blender.png" alt="Blender" className="w-8 h-8 object-contain" /><span className="font-bold text-neutral-800">Blender</span></div>,
+          alt: "Blender",
         }}
       />
 
       <LogoCard
         className="bg-neutral-50/50"
         logo={{
-          icon: <div className="flex items-center gap-2"><Film className="w-8 h-8 text-neutral-800" /><span className="font-bold text-neutral-800">CapCut Pro</span></div>,
+          icon: <div className="flex items-center gap-2"><img src="/capcut.png" alt="CapCut" className="w-8 h-8 object-contain" /><span className="font-bold text-neutral-800">CapCut</span></div>,
           alt: "CapCut",
         }}
       />

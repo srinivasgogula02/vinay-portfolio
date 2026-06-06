@@ -4,7 +4,7 @@ import VideoCard from '@/components/VideoCard';
 import TestimonialGrid from '@/components/TestimonialGrid';
 import { LogoCloud } from '@/components/ui/logo-cloud-2';
 import ClientsMarquee from '@/components/ClientsMarquee';
-import { Edit3 } from 'lucide-react';
+import { Edit3, ArrowRight } from 'lucide-react';
 
 export const dynamic = 'force-dynamic';
 
@@ -58,18 +58,32 @@ export default async function Home() {
                       </p>
                   </div>
 
-                  <div className="flex flex-row items-center gap-6 sm:gap-10 pt-4 flex-wrap">
+                  <div className="flex flex-row items-center gap-2 sm:gap-4 pt-4 w-full sm:w-auto">
+                    <a 
+                      href="#contact" 
+                      className="flex-1 sm:flex-none justify-center bg-neutral-900 text-white py-4 px-2 sm:px-8 rounded-none text-xs sm:text-sm font-bold uppercase tracking-widest hover:bg-neutral-800 hover:-translate-y-1 transition-all duration-300 shadow-xl hover:shadow-2xl flex items-center gap-2"
+                    >
+                      <Edit3 className="w-4 h-4" />
+                      Contact
+                    </a>
+                    <a 
+                      href="/works" 
+                      className="flex-1 sm:flex-none justify-center group bg-white/50 backdrop-blur-md border border-neutral-200/80 text-neutral-900 py-4 px-2 sm:px-8 rounded-none text-xs sm:text-sm font-bold uppercase tracking-widest hover:bg-white hover:-translate-y-1 transition-all duration-300 shadow-sm hover:shadow-xl flex items-center gap-2 relative overflow-hidden"
+                    >
+                      <span className="relative z-10 flex items-center gap-2">
+                        Works
+                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" />
+                      </span>
+                      {/* Soft shine effect on hover */}
+                      <div className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white to-transparent group-hover:animate-[shimmer_1.5s_infinite] opacity-50"></div>
+                    </a>
+                  </div>
+
+                  <div className="flex items-center gap-4 pt-4">
                     <div className="flex flex-col">
                         <span className="text-4xl md:text-5xl font-bold tracking-tighter text-neutral-900">10M+</span>
                         <span className="text-[10px] uppercase tracking-widest text-neutral-500 mt-1 font-medium">Organic Views</span>
                     </div>
-                    <a 
-                      href="#contact" 
-                      className="w-fit bg-neutral-900 text-white px-6 py-3 rounded-xl text-sm font-bold uppercase tracking-widest hover:bg-neutral-800 transition-colors shadow-lg hover:shadow-xl flex items-center gap-2"
-                    >
-                      <Edit3 className="w-4 h-4" />
-                      Contact Me
-                    </a>
                   </div>
               </div>
 
